@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.shop_box {
+  border: rgba(194, 194, 194, 100) solid 2px;
+  display: flex;
+  margin-bottom: 80px;
+  padding: 30px;
+  width: 80%;
+  height: 200px;
+  margin: 50px auto;
+}
+.map{
+  width: 35%;
+  height: 150px;
+}
+@media screen and (max-width: 768px){
+  .map{
+    width: 35%;
+  }
+  .map iframe{
+    height: 200px;
+    width: 200px;
+  }
+  .shop_txt{
+    margin: 0 20px;
+  }
+  .shop_txt h4{
+    font-size: 20px;
+  }
+  .shop_txt p{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .shop_txt{
+    margin: 0 10px;
+    width: 50%;
+  }
+  .shop_txt h4{
+    font-size: 13px;
+  }
+  .shop_txt p{
+    font-size: 10px;
+  }
+  .map{
+    width: 50%;
+  }
+  .map iframe{
+    height: 197px;
+    width: 153px;
+  }
+}
