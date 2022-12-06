@@ -13,6 +13,49 @@
     transform: translateY(0);
   }
 }
+.fade {
+  animation: fadeAnime 1.0s forwards;
+  opacity: 0;
+}
+@keyframes fadeAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.fadeRight{
+  animation: fadeRightAnime 2.0s forwards;
+  opacity: 0;
+}
+@keyframes fadeRightAnime{
+  from{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fadeLeft {
+  animation: fadeRightAnime 1.0s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 body{
   font-family: "æ¸¸ã‚´ã‚·ãƒƒã‚¯ Medium",
     "Yu Gothic Medium",

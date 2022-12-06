@@ -17,13 +17,22 @@
   background: url(../img/lineup_bg-t.webp) no-repeat right;
   background-size: contain;
 }
-.lp_block{
-  display: flex;
-  flex-wrap: wrap;
+.lp_clock{
+  position: relative;
+  padding-left: 500px;
 }
 .lp_item{
-  width: 32%;
+  width: 45%;
   margin: 20px auto;
+}
+.lp_item img{
+  width: 45%;
+}
+.lp_item h4 {
+  padding-right: 500px;
+}
+.lp_item p {
+  padding-right: 500px;
 }
 .lineup2{
   width: 100%;
@@ -47,10 +56,31 @@
   color: rgb(40,40,40);
 }
 .lineup2 .lp_item img {
-  width: 68%;
+  width: 45%;
   border: rgb(40,40,40)solid 2px;
   text-align: center;
+  height: 350px;
 }
 .lineup2 .lp_inner{
   z-index: 1;
+}
+.slick_prev,
+.slick_next {
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+}
+.slick_prev {
+  left: 2.5%;
+  transform: rotate(-135deg);
+}
+.slick_next {
+  right: 2.5%;
+  transform: rotate(45deg);
 }
